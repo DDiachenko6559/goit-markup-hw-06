@@ -22,7 +22,7 @@
 
   <body>
     <!-- Header of web -->
-    <!-- <header class="header">
+    <header class="header">
       <div class="container header-container">
         <nav class="header-navigation">
           <a href="./index.html" target="_top" class="logo header-logo"
@@ -56,17 +56,89 @@
             </li>
           </ul>
         </address>
+        <button class="open-menu-btn" type="button">
+          <svg class="open-menu-icon" width="24" height="24">
+            <use href="./images/icons.svg#icon-menu"></use>
+          </svg>
+        </button>
       </div>
-    </header> -->
+
+      <!-- <div class="mob-menu menu-is-open">
+        <button class="menu-close-btn" type="button">
+          <svg class="menu-close-icon" height="8" width="8">
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+        <nav class="mob-navigation">
+          <ul class="mob-navigation-list">
+            <li>
+              <a href="./index.html" class="mob-navigation-link">Studio</a>
+            </li>
+            <li>
+              <a href="" class="mob-navigation-link">Portfolio</a>
+            </li>
+            <li>
+              <a href="" class="mob-navigation-link">Contacts</a>
+            </li>
+          </ul>
+        </nav>
+        <address class="mob-adress">
+          <ul class="mob-adress-list">
+            <li>
+              <a href="mailto:info@devstudio.com" class="mob-adress-link"
+                >info@devstudio.com</a
+              >
+            </li>
+            <li>
+              <a href="tel:+110001111111" class="mob-adress-link"
+                >+11 (000) 111-11-11</a
+              >
+            </li>
+          </ul>
+          <div class="mob-socials">
+            <ul class="mob-socials-list">
+              <li class="mob-socials-block">
+                <a href="" class="mob-socials-link">
+                  <svg class="mob-socials-icon" width="24" height="24">
+                    <use href="./images/icons.svg#icon-instagram-2"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="mob-socials-block">
+                <a href="" class="mob-socials-link">
+                  <svg class="mob-socials-icon" width="24" height="24">
+                    <use href="./images/icons.svg#icon-twitter-1"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="mob-socials-block">
+                <a href="" class="mob-socials-link">
+                  <svg class="mob-socials-icon" width="24" height="24">
+                    <use href="./images/icons.svg#icon-facebook-1"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="mob-socials-block">
+                <a href="" class="mob-socials-link">
+                  <svg class="mob-socials-icon" width="24" height="24">
+                    <use href="./images/icons.svg#icon-linkedin-1"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </address>
+      </div> -->
+    </header>
 
     <main>
       <!-- HERO SECTION -->
-      <!-- <section class="hero">
+      <section class="hero">
         <div class="container hero-container">
           <h1 class="hero-title">Effective Solutions for Your Business</h1>
           <button class="hero-button" type="button">Order Service</button>
         </div>
-      </section> -->
+      </section>
 
       <!-- ADVANTAGE SECTION -->
       <section class="advantage">
@@ -133,6 +205,7 @@
             <li class="team-list-item">
               <img
                 class="team-images images"
+                srcset="./images/img.jpg 1x, ./images/img@2x.jpeg 2x"
                 src="./images/img.jpg"
                 alt="Mark Guerrero"
                 width="264"
@@ -176,6 +249,7 @@
             <li class="team-list-item">
               <img
                 class="team-images images"
+                srcset="./images/img-2.jpg 1x, ./images/img2@2x.jpeg 2x"
                 src="./images/img-2.jpg"
                 alt="Tom Ford"
                 width="264"
@@ -219,6 +293,7 @@
             <li class="team-list-item">
               <img
                 class="team-images images"
+                srcset="./images/img-3.jpg 1x, ./images/img3@2x.jpeg 2x"
                 src="./images/img-3.jpg"
                 alt="Camila Garcia"
                 width="264"
@@ -262,6 +337,7 @@
             <li class="team-list-item">
               <img
                 class="team-images images"
+                srcset="./images/img-4.jpg 1x, ./images/img4@2x.jpeg 2x"
                 src="./images/img-4.jpg"
                 alt="Daniel Wilson"
                 width="264"
@@ -315,6 +391,10 @@
               <div class="portfolio-list-box">
                 <img
                   class="portfolio-images images"
+                  srcset="
+                    ./images/portfolio-img-1.jpg     1x,
+                    ./images/portfolio-img-1@2x.jpeg 2x
+                  "
                   src="./images/portfolio-img-1.jpg"
                   alt="Banking App"
                   width="360"
@@ -335,6 +415,10 @@
               <div class="portfolio-list-box">
                 <img
                   class="portfolio-images images"
+                  srcset="
+                    ./images/portfolio-img-2.jpg     1x,
+                    ./images/portfolio-img-2@2x.jpeg 2x
+                  "
                   src="./images/portfolio-img-2.jpg"
                   alt="Cashless Payment"
                   width="360"
@@ -357,6 +441,10 @@
               <div class="portfolio-list-box">
                 <img
                   class="portfolio-images images"
+                  srcset="
+                    ./images/portfolio-img-3.jpg     1x,
+                    ./images/portfolio-img-3@2x.jpeg 2x
+                  "
                   src="./images/portfolio-img-3.jpg"
                   alt="Meditation App"
                   width="360"
@@ -377,6 +465,10 @@
               <div class="portfolio-list-box">
                 <img
                   class="portfolio-images images"
+                  srcset="
+                    ./images/portfolio-img-4.jpg     1x,
+                    ./images/portfolio-img-4@2x.jpeg 2x
+                  "
                   src="./images/portfolio-img-4.jpg"
                   alt="Taxi Service"
                   width="360"
@@ -397,6 +489,10 @@
               <div class="portfolio-list-box">
                 <img
                   class="portfolio-images images"
+                  srcset="
+                    ./images/portfolio-img-5.jpg     1x,
+                    ./images/portfolio-img-5@2x.jpeg 2x
+                  "
                   src="./images/portfolio-img-5.jpg"
                   alt="Screen Illustrations"
                   width="360"
@@ -419,6 +515,10 @@
               <div class="portfolio-list-box">
                 <img
                   class="portfolio-images images"
+                  srcset="
+                    ./images/portfolio-img-6.jpg     1x,
+                    ./images/portfolio-img-6@2x.jpeg 2x
+                  "
                   src="./images/portfolio-img-6.jpg"
                   alt="Online Courses"
                   width="360"
@@ -506,7 +606,7 @@
       </div>
     </footer>
 
-    <!-- <div class="backdrop is-open">
+    <div class="backdrop is-open">
       <div class="modal">
         <button class="modal-close-btn" type="button">
           <svg class="modal-close-icon" height="8" width="8">
@@ -585,13 +685,15 @@
                   <use href="./images/icons.svg#icon-checkmark"></use>
                 </svg>
               </span>
-              I accept the terms and conditions of the
-              <a href="" class="modal-form-link"> Privacy Policy</a>
+              <div class="user-privacy-text">
+                I accept the terms and conditions of the
+                <a href="" class="modal-form-link"> Privacy Policy</a>
+              </div>
             </label>
           </div>
           <button type="submit" class="modal-button">Send</button>
         </form>
       </div>
-    </div> -->
+    </div>
   </body>
 </html>
